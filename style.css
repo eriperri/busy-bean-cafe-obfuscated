@@ -1,0 +1,388 @@
+:root {
+    --cream: #f8f4ec;
+    --espresso: #4b3621;
+    --coffee: #6f4e37;
+    --sage: #8a9a5b;
+    --white: #ffffff;
+    --black: #1f1f1f;
+    --font: "Londrina Solid", sans-serif;
+}
+
+/* Body styles and fixed width*/
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: var(--cream);
+    color: var(--espresso);
+    font-family: var(--font);
+    border: 2px solid var(--espresso);
+}
+
+/* Header styles*/
+
+header {
+    background-color: var(--coffee);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--cream);
+    font-size: 40px;
+}
+
+.titleAndToggle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Nav styles*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 25px;
+    background-color: var(--espresso);
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+/* Toggle styles*/
+
+#themeToggle {
+    background-color: var(--cream);
+    color: var(--espresso);
+    border: none;
+    padding: 10px 15px;
+    font-family: var(--font);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#themeToggle:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+/* Home styles */
+
+#home {
+    text-align: center;
+    border-top: 2px solid var(--espresso);
+}
+
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#home img {
+    width: 1280px;
+    object-fit: cover;
+    height: 500px;
+}
+
+/* About styles */
+
+#about {
+    text-align: center;
+    padding: 0 20px;
+}
+
+#about h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 28px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+/* Menu and product switcher styles */
+
+#menu {
+    text-align: center;
+    background-color: var(--white);
+    border: 2px solid var(--espresso);
+    border-right: none;
+    border-left: none;
+}
+
+#menu h2 {
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+#menu > p {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#productDisplay {
+    background-color: var(--cream);
+    padding: 30px;
+    border-radius: 25px;
+    width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+#productImage {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#productName {
+    font-size: 32px;
+}
+
+#productDescription {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#productButtons {
+    padding-bottom: 30px;
+}
+
+#productButtons button {
+    background-color: var(--coffee);
+    color: var(--cream);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    margin: 0 10px;
+    font-family: var(--font);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#productButtons button:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+/* Guessing game styles */
+
+#contest {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--espresso);
+}
+
+#contest h2 {
+    font-size: 45px;
+}
+
+#contest p {
+    font-size: 24px;
+}
+
+#guessForm label {
+    font-size: 22px;
+    color: var(--espresso);
+    margin-right: 10px;
+}
+
+#guessForm input {
+    padding: 10px;
+    font-size: 20px;
+    width: 100px;
+}
+
+#guessForm button {
+    background-color: var(--coffee);
+    color: var(--cream);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-family: var(--font);
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#guessForm button:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+/* Contact form styles */
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white);
+    border-top: none;
+    border-bottom: 2px solid var(--espresso);
+}
+
+#contact h2 {
+    font-size: 45px;
+}
+
+#contact p {
+    font-size: 28px;
+}
+
+#contactForm {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contactForm div {
+    margin-bottom: 20px;
+}
+
+#contactForm label, #contactForm fieldset legend {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+#contactForm input, #contactForm textarea {
+    display: block;
+    width: 100%;
+    font-family: var(--font);
+    font-size: 18px;
+    color: var(--espresso);
+    border: 2px solid var(--coffee);
+    border-radius: 10px;
+}
+
+#contactForm textarea {
+    height: 120px;
+}
+
+fieldset {
+    border: 1px solid var(--espresso);
+    margin-bottom: 20px;
+}
+
+#contactForm input[type="radio"] {
+    display: inline-flex;
+    width: auto;
+    margin: 10px;
+}
+
+#contactForm button {
+    display: block;
+    margin: 30px auto 0 auto;
+    background-color: var(--coffee);
+    color: var(--cream);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-family: var(--font);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+/* Footer styles */
+
+footer {
+    background-color: var(--coffee);
+    color: var(--cream);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Dark mode styles */
+
+.darkMode {
+    background-color: var(--espresso);
+    color: var(--cream);
+    border: 2px solid var(--cream);
+}
+
+.darkMode header, .darkMode footer{
+    background-color: var(--cream);
+    color: var(--espresso);
+}
+
+.darkMode #about {
+    border-bottom: 2px solid var(--cream);
+}
+
+.darkMode #contest {
+    border-top: 2px solid var(--cream);
+    border-bottom: 2px solid var(--cream);
+}
+
+.darkMode h1{
+    color: var(--espresso);
+}
+
+.darkMode #menu, .darkMode #contact {
+    background-color: var(--coffee);
+}
+
+.darkMode #productDisplay {
+    background-color: var(--espresso);
+}
+
+.darkMode #productButtons button {
+    background-color: var(--cream);
+    color: var(--espresso);
+}
+
+.darkMode #productButtons button:hover{
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+.darkMode #contactForm button {
+    background-color: var(--cream);
+    color: var(--espresso);
+}
+
+.darkMode #contactForm button:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+.darkMode #themeToggle {
+    background-color: var(--espresso);
+    color: var(--cream);
+}
+
+.darkMode #themeToggle:hover {
+    background-color: var(--sage);
+    color: var(--white);
+}
